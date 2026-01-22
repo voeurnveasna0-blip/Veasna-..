@@ -1,0 +1,390 @@
+/* Travel Places in Cambodia - Custom Styles */
+
+:root {
+    /* Cambodian-inspired color palette */
+    --cambodia-gold: #D4AF37;
+    --cambodia-red: #C8102E;
+    --cambodia-blue: #00247D;
+    --cambodia-green: #2D5016;
+    --warm-gold: #F4D03F;
+    --deep-red: #8B0000;
+    --natural-green: #4A7C59;
+    --earth-brown: #8B6F47;
+    --cream: #F5F5DC;
+    --light-gold: #FFD700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: linear-gradient(135deg, var(--cambodia-red) 0%, var(--deep-red) 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.75rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--warm-gold) !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: var(--warm-gold) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+    background-color: var(--warm-gold);
+    color: var(--deep-red) !important;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    color: var(--warm-gold);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--cambodia-red) 0%, var(--deep-red) 100%);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(200,16,46,0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(200,16,46,0.4);
+    background: linear-gradient(135deg, var(--deep-red) 0%, var(--cambodia-red) 100%);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--warm-gold);
+    color: var(--warm-gold);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--warm-gold);
+    color: var(--deep-red);
+    transform: translateY(-3px);
+}
+
+/* Section Headings */
+.section-title {
+    text-align: center;
+    margin: 4rem 0 3rem;
+    color: var(--deep-red);
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cambodia-red), var(--warm-gold));
+    border-radius: 2px;
+}
+
+/* Cards */
+.destination-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 100%;
+    background: #fff;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.destination-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover img {
+    transform: scale(1.1);
+}
+
+.destination-card .card-body {
+    padding: 1.5rem;
+}
+
+.destination-card .card-title {
+    color: var(--deep-red);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.destination-card .card-text {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Page Banners */
+.page-banner {
+    background: linear-gradient(135deg, var(--cambodia-red) 0%, var(--deep-red) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--warm-gold);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+}
+
+.page-banner p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Image Sections */
+.image-section {
+    margin: 3rem 0;
+}
+
+.image-section img {
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    width: 100%;
+    height: auto;
+}
+
+/* Tips Cards */
+.tip-card {
+    border-left: 4px solid var(--cambodia-red);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateX(5px);
+}
+
+.tip-card h5 {
+    color: var(--deep-red);
+    margin-bottom: 1rem;
+}
+
+/* Alert Customization */
+.alert-info {
+    background-color: #e7f3ff;
+    border-color: var(--cambodia-blue);
+    color: #004085;
+    border-radius: 10px;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: var(--warm-gold);
+    color: #856404;
+    border-radius: 10px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: var(--natural-green);
+    color: #155724;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #fff;
+    padding: 3rem 0 1.5rem;
+    margin-top: 4rem;
+}
+
+.footer h5 {
+    color: var(--warm-gold);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--warm-gold);
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    background-color: var(--warm-gold);
+    color: var(--deep-red);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #999;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--cambodia-red);
+    box-shadow: 0 0 0 0.2rem rgba(200,16,46,0.25);
+}
+
+/* Badges */
+.badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.badge-primary {
+    background-color: var(--cambodia-red);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .page-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Spacing Utilities */
+.section-padding {
+    padding: 4rem 0;
+}
+
+.mb-section {
+    margin-bottom: 4rem;
+}
+
+/* Text Colors */
+.text-cambodia-gold {
+    color: var(--warm-gold);
+}
+
+.text-cambodia-red {
+    color: var(--cambodia-red);
+}
+
+/* Background Colors */
+.bg-cambodia-light {
+    background-color: var(--cream);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
